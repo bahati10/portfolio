@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.text-fade-gradient {
+  background: linear-gradient(to right, #161616 0%, #00000080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+@layer utilities {
+  .bg-grainy {
+    @apply bg-cover bg-center;
+    background-image: url("/src/assets/GRAINS2.jpg");
+  }
+}
