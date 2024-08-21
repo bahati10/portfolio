@@ -9,6 +9,8 @@ const ProjectsContainer: React.FC = () => {
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </>
   );
