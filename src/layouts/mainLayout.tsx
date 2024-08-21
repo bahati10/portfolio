@@ -4,7 +4,7 @@ import NavbarContainer from "../components/navbar/container";
 
 const MainLayout: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-layout-bg">
+    <div className="flex flex-col">
       <NavbarContainer />
       <main className="flex-grow">
         <Outlet />
