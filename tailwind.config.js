@@ -5,10 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'dot-pattern': "url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Ccircle cx=\"10\" cy=\"10\" r=\"1\" fill=\"%23333\"%3E%3C/circle%3E%3C/svg%3E')",
-        'bg-layout-bg': '#888888'
-      },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
       },
@@ -28,12 +24,51 @@ module.exports = {
         'custom-light-gray': '#333333',
         'custom-content-gray': '#555454',
         'custom-project-gray': 'rgb(161,161,161)',
+        'custom-stacks-gray': 'rgb(192,192,192)',
         'custom-bg-color': 'rgb(240,239,238)'
       },
       rotate: {
         'custom-title-rotation': '8deg'
-      }
+      },
+      textShadow: {
+        'default': '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        'xs': '1px 1px 2px rgba(0, 0, 0, 0.3)',
+        'md': '3px 3px 6px rgba(0, 0, 0, 0.3)',
+        'lg': '5px 5px 10px rgba(0, 0, 0, 0.3)',
+        'xl': '6px 6px 15px rgba(0, 0, 0, 0.3)',
+      },
+      dropShadow: {
+        'extra-bold': '0 5px 2px rgba(0, 0, 0, 0.3)',
+        'icons': '0 1px 2px rgba(0, 0, 0, 0.2)',
+      },
+      boxShadow: {
+        'custom-spread': '0 4px 10px 3px rgba(0, 0, 0, 0.5)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-shadow': {
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        },
+        '.text-shadow-xs': {
+          textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)',
+        },
+        '.text-shadow-md': {
+          textShadow: '3px 3px 6px rgba(0, 0, 0, 0.3)',
+        },
+        '.text-shadow-lg': {
+          textShadow: '5px 5px 10px rgba(0, 0, 0, 0.3)',
+        },
+        '.text-shadow-xl': {
+          textShadow: '6px 6px 15px rgba(0, 0, 0, 0.3)',
+        },
+        '.text-shadow-none': {
+          textShadow: 'none',
+        },
+      }
+      addUtilities(newUtilities, ['resposive', 'hover']);
+    }
+  ],
 }

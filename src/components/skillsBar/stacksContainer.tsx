@@ -1,7 +1,7 @@
 import SingleStack from "./singleStack.tsx";
 import NODEJS from "../../assets/STACKS/JS.svg";
 import JS1 from "../../assets/STACKS/JS1.svg";
-import MONGO1 from "../../assets/STACKS/Vector.svg";
+import MONGO1 from "../../assets/STACKS/MONGO1.svg";
 import TS from "../../assets/STACKS/TYPESCRIPT.svg";
 import GRAPHQL from "../../assets/STACKS/GRAPHQL.svg";
 import NEXTJS from "../../assets/STACKS/NEXTJS.svg";
@@ -11,6 +11,18 @@ import POSTGRES from "../../assets/STACKS/POSTGRES1.svg";
 import REACTJS from "../../assets/STACKS/REACTJS.svg";
 
 const StacksBar: React.FC = () => {
+  const skills = [
+    { imageSrc: NODEJS, altText: "Node JS logo", label: "Node" },
+    { imageSrc: REACTJS, altText: "React JS logo", label: "React" },
+    { imageSrc: MONGO1, altText: "Mongo DB logo", label: "MongoDB" },
+    { imageSrc: FIGMA, altText: "Figma logo", label: "Figma" },
+    { imageSrc: JS1, altText: "Javascript logo", label: "Javascript" },
+    { imageSrc: POSTGRES, altText: "Postgres logo", label: "Postgres" },
+    { imageSrc: NEXTJS, altText: "Next JS logo", label: "Next" },
+    { imageSrc: TS, altText: "Typescript logo", label: "Typescript" },
+    { imageSrc: GRAPHQL, altText: "Graphql logo", label: "Graphql" },
+    { imageSrc: TAILWIND, altText: "Tailwind logo", label: "Tailwind" },
+  ];
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full bg-custom-gray rounded-xl drop-shadow-xl shadow-custom-gray-900">
@@ -18,63 +30,23 @@ const StacksBar: React.FC = () => {
           The Development <br />
           Skills behind my work
         </div>
-        <div className="w-2/3 border-custom-content-gray border-[1px] rounded-xl"></div>
+        <div className="w-4/5 border-custom-stacks-gray border-[1px] rounded-xl"></div>
 
         <div
-          className="flex items-center justify-center bg-custom-content-gray h-10 w-28 rounded-full text-white text-base rotate-custom-title-rotation border-3 shadow-2xl"
+          className="flex items-center justify-center bg-custom-content-gray h-10 w-28 rounded-full text-white text-base rotate-custom-title-rotation border-3 drop-shadow-extra-bold"
           style={{ marginTop: "-22px" }}
         >
           stacks
         </div>
-        <div className="w-full mt-4 h-48 flex flex-row flex-wrap justify-center items-center mb-14">
-          <SingleStack imageSrc={NODEJS} altText="Node JS logo" label="Node" />
-          <SingleStack
-            imageSrc={REACTJS}
-            altText="React JS logo"
-            label="React"
-          />
-          <div className="h-20 w-60 flex flex-row items-center justify-center mx-2 gap-2">
-            <img
-              src={MONGO1}
-              alt="Mongo DB logo"
-              className="w-6 text-custom-content-gray"
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-20 mb-20">
+          {skills.map((skill, index) => (
+            <SingleStack
+              key={index}
+              imageSrc={skill.imageSrc}
+              altText={skill.altText}
+              label={skill.label}
             />
-            <span className="text-custom-black text-sm font-poppins font-medium tracking-tight">
-              MongoDB
-            </span>
-          </div>
-          <SingleStack imageSrc={FIGMA} altText=" Figma logo" label="Figma" />
-          <div className="h-20 w-60 flex flex-row items-center justify-center mx-2 gap-2">
-            <img
-              src={JS1}
-              alt="Javascript logo"
-              className="w-8 text-custom-content-gray"
-            />
-            <span className="text-custom-black text-sm font-poppins font-medium tracking-tight">
-              Javascript
-            </span>
-          </div>
-          <SingleStack
-            imageSrc={POSTGRES}
-            altText="Postgres logo"
-            label="Postgres"
-          />
-          <SingleStack imageSrc={NEXTJS} altText="Next JS logo" label="Next" />
-          <SingleStack
-            imageSrc={TS}
-            altText="Typescript logo"
-            label="Typescript"
-          />
-          <SingleStack
-            imageSrc={GRAPHQL}
-            altText="Graphql logo"
-            label="Graphql"
-          />
-          <SingleStack
-            imageSrc={TAILWIND}
-            altText="Tailwind logo"
-            label="Tailwind"
-          />
+          ))}
         </div>
       </div>
     </>

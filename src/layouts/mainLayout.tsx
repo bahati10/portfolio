@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavbarContainer from "../components/navbar/container";
+import PageFooter from "../components/footer/footer";
 
 const MainLayout: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const MainLayout: React.FC = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
+      <PageFooter />
     </div>
   );
 };
