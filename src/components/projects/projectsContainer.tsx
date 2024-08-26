@@ -33,7 +33,7 @@ const ProjectsContainer: React.FC = () => {
       stacks: ["UI/UX", "ADOBE"],
       logoSrc: "../../assets/PROJECTS/LOGOS/DEPOT.svg",
       title: "DEPOT",
-      projectUrl: "https://e-commerce-lydia-32-fn-staging.onrender.com/",
+      projectUrl: "",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
       githubLink: "hhhh",

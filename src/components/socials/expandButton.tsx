@@ -7,7 +7,7 @@ const ExpandButton: React.FC = () => {
   return (
     <>
       <div className="bg-custom-light-gray flex items-center justify-center w-11 h-11 rounded-full border-none">
-        <LazyLoadImage src={PROFILE2} alt="profileIcon" className="w-3" />
+        <LazyLoadImage src={PROFILE1} alt="profileIcon" className="w-3" />
       </div>
     </>
   );

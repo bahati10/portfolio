@@ -39,6 +39,7 @@ module.exports = {
       },
       dropShadow: {
         'extra-bold': '0 5px 2px rgba(0, 0, 0, 0.3)',
+        'semi-bold': '1px 3px 0.8px rgba(0, 0, 0, 0.3)',
         'icons': '0 1px 2px rgba(0, 0, 0, 0.2)',
       },
       boxShadow: {

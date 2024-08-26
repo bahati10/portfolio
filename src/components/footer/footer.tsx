@@ -1,7 +1,5 @@
-import X from "../../assets/FOOTER/X.svg";
-import LINKEDIN from "../../assets/FOOTER/LINKEDIN.svg";
-import GITHUB from "../../assets/FOOTER/GITHUB.svg";
 import { Link } from "react-router-dom";
+import { images } from "../../constants/images";
 
 const PageFooter: React.FC = () => {
   return (
@@ -14,21 +12,21 @@ const PageFooter: React.FC = () => {
               target="blank"
               className="flex items-center justify-center w-10 h-10 border-[2px] rounded-full cursor-pointer bg-custom-light-gray"
             >
-              <img src={X} alt="X" className="w-4" />
+              <img src={images.footer.X} alt="X" className="w-4" />
             </Link>
             <Link
               to="https://github.com/bahati10"
               target="blank"
               className="flex items-center justify-center w-10 h-10 border-[2px] rounded-full cursor-pointer bg-custom-light-gray"
             >
-              <img src={LINKEDIN} alt="LINKEDIN" className="" />
+              <img src={images.footer.LINKEDIN} alt="LINKEDIN" className="" />
             </Link>
             <Link
               to="/https://x.com/Bahati____"
               target="blank"
               className="flex items-center justify-center w-10 h-10 border-[2px] rounded-full cursor-pointer bg-custom-light-gray"
             >
-              <img src={GITHUB} alt="GITHUB" />
+              <img src={images.footer.GITHUB} alt="GITHUB" />
             </Link>
           </div>
           <div className="flex items-center w-56 borer-2 border-black font-poppins font-medium">
