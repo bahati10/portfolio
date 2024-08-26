@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCard from "./projectCard";
 import PICSOUL from "../../assets/PROJECTS/videography.jpg";
-import STRINGS from "../../assets/PROJECTS/strings.jpg";
 import MOCKUP from "../../assets/PROJECTS/mockup.jpg";
 import ABSTRACT from "../../assets/PROJECTS/abstract.jpg";
 import PIKSOUL from "../../assets/PROJECTS/PIKSOUL.png";
@@ -11,26 +10,23 @@ const ProjectsContainer: React.FC = () => {
     {
       projectImageSrc: PICSOUL,
       stacks: ["UI/UX", "NEXT"],
-      logoSrc: "LO",
-      logotext: "GO",
+      logoSrc: "LOGO",
       title: "FIRST PROJECT",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
     },
     {
       projectImageSrc: MOCKUP,
-      stacks: ["FIGMA & FRAMER"],
-      logoSrc: "LO",
-      logotext: "GO",
+      stacks: ["FIGMA", "FRAMER"],
+      logoSrc: "LOGO",
       title: "FIRST PROJECT",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
     },
     {
       projectImageSrc: ABSTRACT,
-      stacks: ["UI/UX & ADOBE"],
-      logoSrc: "LO",
-      logotext: "GO",
+      stacks: ["UI/UX", "ADOBE"],
+      logoSrc: "LOGO",
       title: "FIRST PROJECT",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
@@ -38,8 +34,7 @@ const ProjectsContainer: React.FC = () => {
     {
       projectImageSrc: PIKSOUL,
       stacks: ["UI/UX", "NEXT"],
-      logoSrc: "LO",
-      logotext: "GO",
+      logoSrc: "LOGO",
       title: "PIKSOUL",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
@@ -58,7 +53,7 @@ const ProjectsContainer: React.FC = () => {
               projectImageSrc={project.projectImageSrc}
               stacks={project.stacks}
               logoSrc={project.logoSrc}
-              logotext={project.logotext}
+              //   logotext={project.logotext}
               title={project.title}
               description={project.description}
             />
