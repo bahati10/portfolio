@@ -22,6 +22,16 @@ const PageFooter: React.FC = () => {
             </div>
           </div>
 
+          <div className="flex items-center w-56 font-poppins font-medium text-sm">
+            Made with Love ❤️ ~Bahati
+          </div>
+          <div className="flex items-center w-48 borer-2 border-black">
+            <span className="text-xl">&copy;</span>
+            <div className="font-medium text-sm tracking-tight">
+              2024 — Copyright
+            </div>
+          </div>
+
           <div className="flex items-center w-56 borer-2 border-black font-poppins font-medium">
             Made with Love ❤️ ~ Bahati
           </div>

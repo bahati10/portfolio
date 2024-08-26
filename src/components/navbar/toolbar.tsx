@@ -15,7 +15,7 @@ const NavEmail: React.FC = () => {
   return (
     <>
       <div
-        className="relative flex items-center h-full w-64 cursor-pointer"
+        className="relative flex items-center h-full w-64 cursor-copy"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
