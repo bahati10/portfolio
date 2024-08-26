@@ -5,6 +5,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
+  Routes,
 } from "react-router-dom";
 import MainLayout from "./layouts/mainLayout";
 import Home from "./pages/landing/home";
@@ -20,6 +21,10 @@ const App: React.FC = () => {
           element={
             <div>
               <Home />
+              <Routes>
+                <Route path="/skills" element={<SkillsPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
+              </Routes>
               <SkillsPage />
               <ProjectsPage />
             </div>

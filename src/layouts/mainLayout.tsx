@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import NavbarContainer from "../components/navbar/container";
 import PageFooter from "../components/footer/footer";
+import SocialsButton from "../components/socials/socialsButton";
 
 const MainLayout: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const MainLayout: React.FC = () => {
         <Outlet />
       </main>
       <PageFooter />
+      <SocialsButton />
     </div>
   );
 };

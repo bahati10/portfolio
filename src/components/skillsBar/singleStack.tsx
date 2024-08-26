@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 interface singleStackProps {
   imageSrc: string;
   altText: string;
@@ -13,7 +14,7 @@ const SingleStack: React.FC<singleStackProps> = ({
   return (
     <>
       <div className="h-10 w-60 flex flex-row items-center justify-center mx-2 gap-2">
-        <img
+        <LazyLoadImage
           src={imageSrc}
           alt={altText}
           className="w-11 text-custom-black drop-shadow-icons"

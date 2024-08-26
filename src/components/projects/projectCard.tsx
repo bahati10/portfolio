@@ -1,5 +1,10 @@
 import React from "react";
 import REDIRECT from "../../assets/PROJECTS/REDIRECT-BTN.svg";
+import GLOBE1 from "../../assets/GLOBES/GLOBE1.svg";
+import GLOBE2 from "../../assets/GLOBES/GLOBE2.svg";
+import GLOBE3 from "../../assets/GLOBES/GLOBE3.svg";
+import GIT from "../../assets/GLOBES/GIT.svg";
+
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -11,6 +16,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   projectUrl: string;
+  githubLink: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -21,6 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   projectUrl,
+  githubLink,
 }) => {
   return (
     <>
@@ -45,15 +52,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               ))}
             </div>
             <div className="flex items-center">
-              <Link to={projectUrl}>
+              <Link to={projectUrl} target="blank">
                 <LazyLoadImage
-                  src={REDIRECT}
+                  src={GLOBE3}
                   alt="Redirect to project"
-                  className="w-10 cursor-pointer mx-2"
+                  className="w-7 cursor-pointer mx-1"
                 />
               </Link>
+              {githubLink ? (
+                <Link to={githubLink}>
+                  <LazyLoadImage
+                    src={GIT}
+                    alt=""
+                    className="w-7 cursor-pointer mx-1"
+                  />
+                </Link>
+              ) : (
+                <Link to={githubLink}>
+                  <LazyLoadImage
+                    src={GIT}
+                    alt=""
+                    className="w-7 cursor-not-allowed mx-1"
+                  />
+                </Link>
+              )}
               <div className="h-full">
-                <img src={logoSrc} alt="" />
+                <LazyLoadImage src={logoSrc} alt="" />
                 {/* {logotext} */}
               </div>
             </div>
