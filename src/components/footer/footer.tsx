@@ -1,9 +1,6 @@
 import X from "../../assets/FOOTER/X.svg";
 import LINKEDIN from "../../assets/FOOTER/LINKEDIN.svg";
 import GITHUB from "../../assets/FOOTER/GITHUB.svg";
-import X1 from "../../assets/FOOTER/X1.svg";
-import LINKEDIN1 from "../../assets/FOOTER/LINKEDIN1.svg";
-import GITHUB1 from "../../assets/FOOTER/GITHUB1.svg";
 
 const PageFooter: React.FC = () => {
   return (
@@ -21,17 +18,6 @@ const PageFooter: React.FC = () => {
               <img src={GITHUB} alt="GITHUB" />
             </div>
           </div>
-
-          <div className="flex items-center w-56 font-poppins font-medium text-sm">
-            Made with Love ❤️ ~Bahati
-          </div>
-          <div className="flex items-center w-48 borer-2 border-black">
-            <span className="text-xl">&copy;</span>
-            <div className="font-medium text-sm tracking-tight">
-              2024 — Copyright
-            </div>
-          </div>
-
           <div className="flex items-center w-56 borer-2 border-black font-poppins font-medium">
             Made with Love ❤️ ~ Bahati
           </div>
