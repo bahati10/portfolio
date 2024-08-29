@@ -1,6 +1,7 @@
 import React from "react";
 import REDIRECT from "../../assets/PROJECTS/REDIRECT-BTN.svg";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface ProjectCardProps {
   projectImageSrc: string;
@@ -25,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <>
       <div className="w-full md:w-1/2 lg:w-1/3 bg-slate-50 shadow-md rounded overflow-hidden">
         <div className="h-72">
-          <img
+          <LazyLoadImage
             src={projectImageSrc}
             alt="Picsoul Project Image"
             className="w-full h-full object-cover"
@@ -45,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
             <div className="flex items-center">
               <Link to={projectUrl}>
-                <img
+                <LazyLoadImage
                   src={REDIRECT}
                   alt="Redirect to project"
                   className="w-10 cursor-pointer mx-2"
