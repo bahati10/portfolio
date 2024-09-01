@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <>
       <div className="w-full md:w-1/2 lg:w-1/3 bg-slate-50 shadow-md rounded overflow-hidden">
-        <div className="h-72">
+        <div className="h-72 shadow-md">
           <LazyLoadImage
             src={projectImageSrc}
             alt="Picsoul Project Image"
@@ -53,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 />
               </Link>
               <div className="h-full">
-                {logoSrc}
+                <img src={logoSrc} alt="" />
                 {/* {logotext} */}
               </div>
             </div>

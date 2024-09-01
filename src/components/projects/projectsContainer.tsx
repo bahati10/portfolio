@@ -4,15 +4,17 @@ import PICSOUL from "../../assets/PROJECTS/videography.jpg";
 import MOCKUP from "../../assets/PROJECTS/mockup.jpg";
 import ABSTRACT from "../../assets/PROJECTS/abstract.jpg";
 import PIKSOUL from "../../assets/PROJECTS/PIKSOUL.png";
+import DEPOT from "../../assets/PROJECTS/DEPOT.png";
+import DEPOTLOGO from "../../assets/PROJECTS/LOGOS/DEPOT.svg";
 
 const ProjectsContainer: React.FC = () => {
   const projects = [
     {
       projectImageSrc: PICSOUL,
-      stacks: ["UI/UX", "NEXT"],
+      stacks: ["UI/UX", "REACT"],
       logoSrc: "LOGO",
       title: "FIRST PROJECT",
-      projectUrl: "url",
+      projectUrl: "urllll",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
     },
@@ -21,16 +23,16 @@ const ProjectsContainer: React.FC = () => {
       stacks: ["FIGMA", "FRAMER"],
       logoSrc: "LOGO",
       title: "FIRST PROJECT",
-      projectUrl: "url",
+      projectUrl: "urllll",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
     },
     {
-      projectImageSrc: ABSTRACT,
+      projectImageSrc: DEPOT,
       stacks: ["UI/UX", "ADOBE"],
-      logoSrc: "LOGO",
-      title: "FIRST PROJECT",
-      projectUrl: "url",
+      logoSrc: "../../assets/PROJECTS/LOGOS/DEPOT.svg",
+      title: "DEPOT",
+      projectUrl: "https://e-commerce-lydia-32-fn-staging.onrender.com/",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
     },
@@ -39,7 +41,7 @@ const ProjectsContainer: React.FC = () => {
       stacks: ["UI/UX", "NEXT"],
       logoSrc: "LOGO",
       title: "PIKSOUL",
-      projectUrl: "url",
+      projectUrl: "",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
     },
@@ -61,7 +63,7 @@ const ProjectsContainer: React.FC = () => {
               //   logotext={project.logotext}
               title={project.title}
               description={project.description}
-              projectUrl="url"
+              projectUrl={project.projectUrl}
             />
           ))}
         </div>
