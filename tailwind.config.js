@@ -19,7 +19,7 @@ module.exports = {
         'extra-rounded': '8rem'
       },
       colors: {
-        'custom-black': '#161616',
+        'custom-black': 'rgb(22,22,22)',
         'custom-gray': '#E1E0E0',
         'custom-light-gray': '#333333',
         'custom-content-gray': '#555454',

@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "./projectCard";
 import PICSOUL from "../../assets/PROJECTS/videography.jpg";
 import MOCKUP from "../../assets/PROJECTS/mockup.jpg";
-import ABSTRACT from "../../assets/PROJECTS/abstract.jpg";
 import PIKSOUL from "../../assets/PROJECTS/PIKSOUL.png";
 import DEPOT from "../../assets/PROJECTS/DEPOT.png";
 import DEPOTLOGO from "../../assets/PROJECTS/LOGOS/DEPOT.svg";
@@ -17,6 +16,7 @@ const ProjectsContainer: React.FC = () => {
       projectUrl: "urllll",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
+      githubLink: "hhhh",
     },
     {
       projectImageSrc: MOCKUP,
@@ -26,6 +26,7 @@ const ProjectsContainer: React.FC = () => {
       projectUrl: "urllll",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
+      githubLink: "hhhh",
     },
     {
       projectImageSrc: DEPOT,
@@ -35,6 +36,7 @@ const ProjectsContainer: React.FC = () => {
       projectUrl: "https://e-commerce-lydia-32-fn-staging.onrender.com/",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
+      githubLink: "hhhh",
     },
     {
       projectImageSrc: PIKSOUL,
@@ -44,6 +46,7 @@ const ProjectsContainer: React.FC = () => {
       projectUrl: "",
       description:
         "psum passages, and more recently with desktop publishing software like Aldus PageMaker including versionem.",
+      githubLink: "",
     },
   ];
   return (
@@ -64,6 +67,7 @@ const ProjectsContainer: React.FC = () => {
               title={project.title}
               description={project.description}
               projectUrl={project.projectUrl}
+              githubLink={project.githubLink}
             />
           ))}
         </div>
