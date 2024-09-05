@@ -3,6 +3,7 @@ import ExpandButton from "./expandButton";
 import SingleSocialApp from "./socialApp";
 import XICON from "../../assets/FOOTER/X.svg";
 import LINKEDIN from "../../assets/FOOTER/LINKEDIN.svg";
+import BEHANCE from "../../assets/GLOBES/BEHANCE.svg";
 import GITHUB from "../../assets/FOOTER/GITHUB.svg";
 import CloseButton from "./closeButton";
 
@@ -20,7 +21,7 @@ const SocialsButton: React.FC = () => {
       const scrollTop = document.documentElement.scrollTop;
       const clientHeight = document.documentElement.clientHeight;
 
-      if (scrollTop + clientHeight >= scrollHeight - 52) {
+      if (scrollTop + clientHeight >= scrollHeight - 70) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -46,6 +47,11 @@ const SocialsButton: React.FC = () => {
       appLogo: GITHUB,
       altText: "Github Logo",
       appUrl: "https://github.com/bahati10",
+    },
+    {
+      appLogo: BEHANCE,
+      altText: "Behance Logo",
+      appUrl: "",
     },
   ];
 

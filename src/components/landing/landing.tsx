@@ -11,7 +11,7 @@ const HomeComponent: React.FC = () => {
           Building awesome <br />
           stuff, one codebase at <br />a time.
         </div>
-        <button className="flex items-center justify-center bg-custom-light-gray text-custom-gray font-medium text-sm h-14 w-36 rounded-full">
+        <button className="flex items-center justify-center bg-custom-light-gray text-custom-gray font-medium text-sm h-14 w-36 rounded-full drop-shadow-semi-bold">
           Get my cv
         </button>
       </div>

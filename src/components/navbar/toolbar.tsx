@@ -1,5 +1,6 @@
 import { useState } from "react";
 import COPYICON from "../../assets/COPYICON.svg";
+import TICK from "../../assets/TICK.svg";
 
 const NavEmail: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -36,7 +37,14 @@ const NavEmail: React.FC = () => {
           }}
           onClick={handleCopyEmail}
         >
-          {isCopied ? "Copied" : "click to copy"}
+          {isCopied ? (
+            <>
+              Copied
+              <img src={TICK} alt="TIck icon" className="w-5 ml-1" />
+            </>
+          ) : (
+            "click to copy"
+          )}
           <img
             src={COPYICON}
             alt="Copy icon"

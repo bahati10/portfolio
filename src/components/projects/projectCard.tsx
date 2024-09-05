@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectImageSrc,
   stacks,
   logoSrc,
-  //   logotext,
+  logotext,
   title,
   description,
   projectUrl,
@@ -52,13 +52,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               ))}
             </div>
             <div className="flex items-center">
-              <Link to={projectUrl} target="blank">
-                <LazyLoadImage
-                  src={GLOBE3}
-                  alt="Redirect to project"
-                  className="w-7 cursor-pointer mx-1"
-                />
-              </Link>
+              {projectUrl ? (
+                <Link to={projectUrl} target="blank">
+                  <LazyLoadImage
+                    src={GLOBE3}
+                    alt="Redirect to project"
+                    className="w-7 cursor-pointer mx-1"
+                  />
+                </Link>
+              ) : (
+                <Link to={projectUrl}>
+                  <LazyLoadImage
+                    src={GLOBE3}
+                    alt="Redirect to project"
+                    className="w-7 cursor-not-allowed mx-1"
+                  />
+                </Link>
+              )}
               {githubLink ? (
                 <Link to={githubLink}>
                   <LazyLoadImage
