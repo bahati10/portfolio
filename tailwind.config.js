@@ -9,6 +9,9 @@ module.exports = {
         'poppins': ['Poppins', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
         'righteous': ['Righteous', 'cursive'],
+        'anton': ['Anton', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'teko': ['Teko', 'sans-serif'],
       },
       lineHeight: {
         'extra-loose': '2.5',
