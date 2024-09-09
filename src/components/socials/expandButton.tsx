@@ -1,6 +1,5 @@
 import React from "react";
 import PROFILE1 from "../../assets/PROFILE1.svg";
-import PROFILE2 from "../../assets/PROFILE2.svg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ExpandButton: React.FC = () => {

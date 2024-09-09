@@ -4,7 +4,6 @@ import PICSOUL from "../../assets/PROJECTS/videography.jpg";
 import MOCKUP from "../../assets/PROJECTS/mockup.jpg";
 import PIKSOUL from "../../assets/PROJECTS/PIKSOUL.png";
 import DEPOT from "../../assets/PROJECTS/DEPOT.png";
-import DEPOTLOGO from "../../assets/PROJECTS/LOGOS/DEPOT.svg";
 
 const ProjectsContainer: React.FC = () => {
   const projects = [

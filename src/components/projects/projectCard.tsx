@@ -1,10 +1,6 @@
 import React from "react";
-import REDIRECT from "../../assets/PROJECTS/REDIRECT-BTN.svg";
-import GLOBE1 from "../../assets/GLOBES/GLOBE1.svg";
-import GLOBE2 from "../../assets/GLOBES/GLOBE2.svg";
 import GLOBE3 from "../../assets/GLOBES/GLOBE3.svg";
 import GIT from "../../assets/GLOBES/GIT.svg";
-
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -23,7 +19,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectImageSrc,
   stacks,
   logoSrc,
-  logotext,
   title,
   description,
   projectUrl,
