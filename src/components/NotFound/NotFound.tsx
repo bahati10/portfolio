@@ -3,7 +3,7 @@ import NotFoundDisplay from "./NotFoundGraphic";
 
 const NotFoundComp: React.FC = () => {
   return (
-    <div className="flex items-center justify-center border-2 border-black min-h-screen">
+    <div className="flex items-center justify-center min-h-screen">
       <NotFoundDisplay />
     </div>
   );
