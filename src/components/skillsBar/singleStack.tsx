@@ -4,12 +4,14 @@ interface singleStackProps {
   imageSrc: string;
   altText: string;
   label: string;
+  isMongo?: Boolean;
 }
 
 const SingleStack: React.FC<singleStackProps> = ({
   imageSrc,
   altText,
   label,
+  isMongo = false,
 }) => {
   return (
     <>
@@ -17,7 +19,9 @@ const SingleStack: React.FC<singleStackProps> = ({
         <LazyLoadImage
           src={imageSrc}
           alt={altText}
-          className="w-11 text-custom-black drop-shadow-icons"
+          className={`w-11 text-custom-black drop-shadow-icons ${
+            isMongo ? "w-7" : ""
+          }`}
         />
         <span className="text-custom-black text-sm font-poppins font-medium tracking-tight">
           {label}

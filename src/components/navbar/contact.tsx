@@ -3,7 +3,8 @@ import { HashLink as Link } from "react-router-hash-link";
 const NavContact = () => {
   return (
     <>
-      <div className="flex h-11 w-1/5 items-center justify-evenly border-[1.5px] border-custom-light-gray rounded-full mr-4">
+      <div className="flex h-11 w-1/5 items-center justify-evenly rounded-full mr-4">
+        {/* <div className="flex h-11 w-1/5 items-center justify-evenly border-[1.5px] border-custom-light-gray rounded-full mr-4"> */}
         <Link
           to="/#about"
           className="flex flex-row text-custom-light-gray font-poppins font-medium tracking-tight"
@@ -23,6 +24,13 @@ const NavContact = () => {
           className="text-custom-light-gray font-poppins font-medium tracking-tight"
         >
           Projects
+        </Link>
+        /
+        <Link
+          to="/#services"
+          className="text-custom-light-gray font-poppins font-medium tracking-tight"
+        >
+          Services
         </Link>
       </div>
     </>

@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <>
-      <div className="w-full md:w-1/2 lg:w-1/3 bg-slate-50 shadow-md rounded overflow-hidden">
+      <div className="max-w-[470px] md:w-1/2 lg:w-1/3 bg-slate-50 shadow-md rounded overflow-hidden">
         <div className="h-72 shadow-md">
           <LazyLoadImage
             src={projectImageSrc}

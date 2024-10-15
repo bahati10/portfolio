@@ -6,7 +6,7 @@ import SocialsButton from "../components/socials/socialsButton";
 
 const MainLayout: React.FC = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center">
       <NavbarContainer />
       <main className="flex-grow">
         <Outlet />

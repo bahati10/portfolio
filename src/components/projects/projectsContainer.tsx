@@ -50,7 +50,7 @@ const ProjectsContainer: React.FC = () => {
   ];
   return (
     <>
-      <div className="bg-custom-bg-color flex flex-col flex-wrap items-center justify-center w-full py-10 gap-x-20 gap-y-16">
+      <div className="bg-custom-bg-color flex flex-col flex-wrap items-center justify-center w-full pb-10 pt-[100px] gap-y-10">
         <div className="font-bold text-center text-4xl text-fade-gradient tracking-tight">
           Projects
         </div>

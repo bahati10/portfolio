@@ -14,18 +14,23 @@ const StacksBar: React.FC = () => {
   const skills = [
     { imageSrc: NODEJS, altText: "Node JS logo", label: "Node" },
     { imageSrc: REACTJS, altText: "React JS logo", label: "React" },
-    { imageSrc: MONGO1, altText: "Mongo DB logo", label: "MongoDB" },
+    {
+      imageSrc: MONGO1,
+      altText: "Mongo DB logo",
+      label: "MongoDB",
+      isMongo: true,
+    },
     { imageSrc: FIGMA, altText: "Figma logo", label: "Figma" },
     { imageSrc: JS1, altText: "Javascript logo", label: "Javascript" },
     { imageSrc: POSTGRES, altText: "Postgres logo", label: "Postgres" },
     { imageSrc: NEXTJS, altText: "Next JS logo", label: "Next" },
     { imageSrc: TS, altText: "Typescript logo", label: "Typescript" },
     { imageSrc: GRAPHQL, altText: "Graphql logo", label: "Graphql" },
-    { imageSrc: TAILWIND, altText: "Tailwind logo", label: "Tailwind" },
+    { imageSrc: TAILWIND, altText: "Tailwind logo", label: "Tailwind CSS" },
   ];
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full bg-custom-gray rounded-xl drop-shadow-xl shadow-custom-gray-900">
+      <div className="flex flex-col items-center justify-center w-full bg-slate-50 rounded-xl drop-shadow-xl shadow-custom-gray-900">
         <div className="my-10 font-poppins font-bold text-center text-3xl text-fade-gradient tracking-tight leading-10">
           The Development <br />
           Skills behind my work
@@ -45,6 +50,7 @@ const StacksBar: React.FC = () => {
               imageSrc={skill.imageSrc}
               altText={skill.altText}
               label={skill.label}
+              isMongo={skill.isMongo}
             />
           ))}
         </div>
