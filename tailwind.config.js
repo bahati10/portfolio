@@ -30,10 +30,12 @@ module.exports = {
         'custom-content-gray': '#555454',
         'custom-project-gray': 'rgb(161,161,161)',
         'custom-stacks-gray': 'rgb(192,192,192)',
-        'custom-bg-color': 'rgb(240,239,238)'
+        'custom-bg-color': 'rgb(240,239,238)',
+        'custom-services-bg': 'rgb(233,242,244)'
       },
       rotate: {
-        'custom-title-rotation': '8deg'
+        'custom-title-rotation': '8deg',
+        'custom-services-rotation': '-8deg'
       },
       textShadow: {
         'default': '2px 2px 4px rgba(0, 0, 0, 0.5)',
